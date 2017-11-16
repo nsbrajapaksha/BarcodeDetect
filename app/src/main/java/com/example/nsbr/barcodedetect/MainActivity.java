@@ -26,9 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ImageView myImageView = (ImageView) findViewById(R.id.imgview);
-                Bitmap myBitmap = BitmapFactory.decodeResource(
-                        getApplicationContext().getResources(),
-                        R.drawable.puppy);
+                Bitmap myBitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.puppy);
                 myImageView.setImageBitmap(myBitmap);
 
                 TextView txtView = (TextView) findViewById(R.id.txtContent);
